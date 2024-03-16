@@ -1,0 +1,32 @@
+.button {
+    background-color: var(--b-s);
+    color: var(--light-0);
+    text-decoration: none;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 12px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.button:hover {
+    background-color: var(--b-h);
+}
+
+.button:active {
+    background-color: var(--b-c);
+}
+
+.button svg {
+    margin-left: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+@media (min-width: 1158px) {
+
+}

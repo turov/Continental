@@ -1,0 +1,142 @@
+.banner {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    padding: 146px 19px 0;
+    background: var(--b-s);
+}
+
+.banner__container {
+    padding: 16px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    background-color: var(--light-0);
+
+}
+
+.banner--small-appliances {
+    background-image: url("../assets/img/small-appliances-banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner--home-appliances {
+    background-image: url("../assets/img/home-appliances-banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner--air-comfort {
+    background-image: url("../assets/img/air-comfort-banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner--recipe {
+    background-image: url("../assets/img/recipe-banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner--support {
+    background-image: url("../assets/img/support-banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner--article {
+    background-image: url("../assets/img/article-banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner--about {
+    background-image: url("../assets/img/about-banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner--item .banner__container {
+    padding-bottom: 32px;
+}
+
+.banner--item .breadcrumbs {
+    margin-bottom: 0;
+}
+
+.breadcrumbs {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin: 0 0 8px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 9px;
+}
+
+.breadcrumbs li {
+    position: relative;
+    padding-right: 26px;
+    color: var(--b-c);
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+.breadcrumbs li::after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 8px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='10' viewBox='0 0 5 10' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.02051 0.678982L4.82491 4.5679C5.05836 4.80654 5.05836 5.19346 4.82491 5.4321L1.02051 9.32102C0.787057 9.55966 0.408549 9.55966 0.175092 9.32102C-0.0583641 9.08237 -0.0583641 8.69546 0.175092 8.45681L3.55678 5L0.175092 1.54319C-0.0583641 1.30454 -0.0583641 0.917626 0.175092 0.678982C0.408549 0.440339 0.787057 0.440339 1.02051 0.678982Z' fill='%23E89D46'/%3E%3C/svg%3E");
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+.breadcrumbs li:last-child::after {
+    display: none;
+}
+
+.breadcrumbs a {
+    color: var(--b-s);
+    text-decoration: none;
+}
+
+.banner__title {
+    position: relative;
+    z-index: 1;
+    font-size: 28px;
+    line-height: 1.35;
+    color: var(--main-dark);
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    margin: 0;
+}
+
+@media (min-width: 1158px) {
+    .banner {
+        padding: 32px 64px 0;
+        margin-top: 48px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1140px;
+        border-radius: 16px;
+    }
+
+    .banner__container {
+        padding: 32px;
+        max-width: 480px;
+    }
+
+    .breadcrumbs {
+        margin-bottom: 16px;
+    }
+
+    .banner__title {
+        font-size: 36px;
+    }
+}

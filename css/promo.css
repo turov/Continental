@@ -1,0 +1,43 @@
+.promo__container {
+    padding: 32px 19px 32px;
+}
+
+
+.promo__title {
+    margin-bottom: 32px;
+}
+
+.promo .video {
+    border-radius: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+    max-width: 928px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 1470px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1158px) {
+    .promo {
+        padding: 48px 19px 48px;
+    }
+
+    .promo__container {
+        padding: 0;
+        position: relative;
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+
+    .promo__title {
+        margin-bottom: 48px;
+    }
+}
